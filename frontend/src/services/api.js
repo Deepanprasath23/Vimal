@@ -55,16 +55,12 @@ export const sendContactMessage = async (formData) => {
     return { success: true, data: res.data };
   } catch (error) {
     console.warn('Backend API contact submission failed:', error);
-    // If backend is offline or errors, we simulate a smooth successful response with a clear message
-    const errorMsg = error.response?.data?.detail || error.message;
     if (error.response?.status === 422) {
       return { success: false, error: 'Validation error. Please check your form input.' };
     }
-    // Return success simulation for demonstration if backend unreachable
     return { 
-      success: true, 
-      simulated: true,
-      message: 'Thank you! Your message has been received. Vimal will respond shortly.' 
+      success: false,
+      error: error.response?.data?.detail || 'Unable to send your message. Please try again or email Vimal directly.'
     };
   }
 };
