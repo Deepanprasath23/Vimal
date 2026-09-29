@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Briefcase, Camera, Film, Compass, CheckCircle2 } from 'lucide-react';
-
+import profilePhoto from '../assets/Vimal raj.png';
 export default function AboutSection() {
   return (
     <section id="about" className="py-24 bg-[#09090e] relative overflow-hidden border-t border-white/5">
@@ -25,8 +25,8 @@ export default function AboutSection() {
                 
                 {/* Simulated Portrait Image or Styled Camera Viewfinder */}
                 <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80"
-                  alt="Vimal Raj K Portrait Placeholder"
+                  src={profilePhoto}
+                  alt="Vimal Raj K"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 filter grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
 

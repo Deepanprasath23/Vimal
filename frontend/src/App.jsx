@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import SelectedWorkSection from './components/SelectedWorkSection';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ServicesSection from './components/ServicesSection';
@@ -9,11 +8,9 @@ import ProcessSection from './components/ProcessSection';
 import JourneySection from './components/JourneySection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import ProjectDetailModal from './components/ProjectDetailModal';
 import { fetchProfile } from './services/api';
 
 export default function App() {
-  const [selectedProject, setSelectedProject] = useState(null);
   const [profile, setProfile] = useState(null);
 
   useEffect(() => {
@@ -28,7 +25,6 @@ export default function App() {
       {/* Main Content Sections */}
       <main>
         <HeroSection />
-        <SelectedWorkSection onSelectProject={(proj) => setSelectedProject(proj)} />
         <AboutSection />
         <SkillsSection />
         <ServicesSection />
@@ -39,15 +35,6 @@ export default function App() {
 
       {/* Minimal Footer */}
       <Footer profile={profile} />
-
-      {/* Detailed Project View Modal */}
-      {selectedProject && (
-        <ProjectDetailModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-          onSelectProject={(proj) => setSelectedProject(proj)}
-        />
-      )}
     </div>
   );
 }

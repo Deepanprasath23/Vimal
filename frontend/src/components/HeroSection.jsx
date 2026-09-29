@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Film } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -69,11 +69,11 @@ export default function HeroSection() {
             className="flex flex-wrap items-center gap-4 w-full sm:w-auto"
           >
             <a
-              href="#work"
+              href="#about"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-md bg-amber-500 text-black font-bold text-xs uppercase tracking-widest hover:bg-amber-400 transition-all duration-300 shadow-xl shadow-amber-500/20 active:scale-95"
             >
-              <Film className="w-4 h-4" />
-              <span>View My Work</span>
+              <ArrowDown className="w-4 h-4" />
+              <span>About Me</span>
             </a>
 
             <a

@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     
     # Profile configuration
     PORTFOLIO_OWNER_NAME: str = "Vimal Raj K"
-    PORTFOLIO_OWNER_TITLE: str = "Video Editor | Motion Graphics Designer"
+    PORTFOLIO_OWNER_TITLE: str = "Creative Visual Storyteller"
     PORTFOLIO_OWNER_EMAIL: str = "vraj92063@gmail.com"
     PORTFOLIO_OWNER_LOCATION: str = "Coimbatore, India"
     

@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Film, Mail, ArrowUpRight } from 'lucide-react';
 
 const NAV_ITEMS = [
-  { label: 'Work', href: '#work' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Services', href: '#services' },

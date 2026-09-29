@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# virtual environments
+backend/venv/
+.venv/
+venv/
+
+# environment files
+.env
+.env.*
+
+# local app data
+*.db

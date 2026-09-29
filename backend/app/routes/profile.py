@@ -10,16 +10,17 @@ def get_profile():
         "title": settings.PORTFOLIO_OWNER_TITLE,
         "location": settings.PORTFOLIO_OWNER_LOCATION,
         "email": settings.PORTFOLIO_OWNER_EMAIL,
-        "experience": "Fresher",
+        "experience": "Fresher (Skill-Focused)",
         "tagline": "Cinematic stories. Powerful visuals. Thoughtful motion.",
         "bio": (
             "I’m Vimal Raj K, a passionate video editor and motion graphics designer from Coimbatore. "
-            "I enjoy turning raw footage into engaging visual stories through cinematic editing, creative transitions and motion design."
+            "I enjoy turning raw footage into engaging visual stories through cinematic editing, "
+            "creative transitions, and motion design."
         ),
         "primary_skills": [
             "Cinematic Video Editing",
             "Short-form / Reels Editing",
-            "Motion Graphics"
+            "Motion Graphics Design"
         ],
         "software": [
             "Adobe After Effects",
@@ -32,5 +33,10 @@ def get_profile():
             "instagram": "https://instagram.com",
             "linkedin": "https://linkedin.com",
             "behance": "https://behance.net"
-        }
+        },
+        "portfolio_focus": [
+            "Cinematic editing",
+            "Short-form social content",
+            "Motion graphics storytelling"
+        ]
     }
